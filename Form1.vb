@@ -21,7 +21,7 @@ Public Class Form1
         stSQL = "Select BookingID, Customer, Seat FROM tblBookings"
 
         Dim stConString As String
-        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
 
         Dim conBookings As OleDbConnection
         conBookings = New OleDbConnection
@@ -84,7 +84,7 @@ Public Class Form1
         Else
 
             Dim stConString As String
-            stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+            stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
             Dim conBookings As OleDbConnection
             conBookings = New OleDbConnection
             conBookings.ConnectionString = stConString
@@ -118,7 +118,7 @@ Public Class Form1
         stSQL = "SELECT CustomerID, FirstName,LastName FROM tblCustomers"
 
         Dim stConString As String
-        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
 
         Dim conCustomers As OleDbConnection
         conCustomers = New OleDbConnection
@@ -183,7 +183,7 @@ Public Class Form1
             End If
         Next
         Dim stConString As String
-        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
         Dim conDeleteBookings As OleDbConnection
         conDeleteBookings = New OleDbConnection
         conDeleteBookings.ConnectionString = stConString
@@ -206,12 +206,13 @@ Public Class Form1
 
     End Sub
 
+    <Obsolete>
     Private Sub btnBookingsView_Click(sender As Object, e As EventArgs) Handles btnBookingsView.Click
         Dim stSQL As String
         stSQL = "Select BookingID, Customer, Seat FROM tblBookings"
 
         Dim stConString As String
-        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+        stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
 
         Dim conBookings As OleDbConnection
         conBookings = New OleDbConnection

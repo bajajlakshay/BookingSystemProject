@@ -11,7 +11,7 @@ Public Class Form2
             MsgBox("One or two fields cannot be empty")
         Else
             Dim stConString As String
-            stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=F:\Project\BookingSystem\BS.accdb"
+            stConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data source=/BookingSystemProject/BS.accdb"
             Dim conAddCustomers As OleDbConnection
         conAddCustomers = New OleDbConnection
         conAddCustomers.ConnectionString = stConString
